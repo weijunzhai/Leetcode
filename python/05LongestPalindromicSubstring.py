@@ -4,7 +4,7 @@ class Solution:
         :type s: str
         :rtype: str
         """
-        #initialize the dp matrix
+        #initialize the dp 
         dp = [[True if i == j else False for i in range(len(s))] for j in range(len(s))]
         for i in range(len(s)-1):
         	if s[i] == s[i+1]:
